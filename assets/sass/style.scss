@@ -1,0 +1,28 @@
+/*!
+Theme Name: Touchpoint
+Theme URI: https://github.com/doughamlin/touchpoint
+Author: Doug Hamlin
+Author URI: http://doughamlin.com
+Description: 
+Version: 0.1.7
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: touchpoint
+*/
+
+
+
+@import "mixins";
+@import "variables";
+@import "reset";
+@import "wp_base";
+@import "site";
+
+/* =Comments
+-------------------------------------------------------------- */
+@import "comments"; 
+
+/* =Print
+----------------------------------------------- */
+@import "print";
+

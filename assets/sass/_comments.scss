@@ -1,0 +1,127 @@
+.comments-title {
+	margin-bottom: 4.8rem;
+	font-size: 1.6rem;
+	font-weight: normal;
+}
+.comments-area article {
+	margin: 2.4rem 0;
+}
+.comments-area article header {
+	margin: 0 0 4.8rem;
+	overflow: hidden;
+	position: relative;
+}
+.comments-area article header img {
+	float: left;
+	padding: 0;
+}
+.comments-area article header cite,
+.comments-area article header time {
+	display: block;
+	margin-left: 8.5rem;
+}
+.comments-area article header cite {
+	font-style: normal;
+	font-size: 1.5rem;
+}
+.comments-area article header time {
+	text-decoration: none;
+	font-size: 1.2rem;
+	color: #5e5e5e;
+}
+.comments-area article header a {
+	text-decoration: none;
+	color: #5e5e5e;
+}
+.comments-area article header a:hover {
+	color: #21759b;
+}
+.comments-area article header cite a {
+	color: #444;
+}
+.comments-area article header cite a:hover {
+	text-decoration: underline;
+}
+.comments-area article header h4 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0.6rem 1.2rem;
+	font-size: 1.2rem;
+	font-weight: normal;
+	color: #fff;
+	background-color: #0088d0;
+	background-repeat: repeat-x;
+	background-image: linear-gradient(top, #009cee, #0088d0);
+	border-radius: 0.3rem;
+	border: 0.1rem solid #007cbd;
+}
+.comments-area li.bypostauthor cite span {
+	position: absolute;
+	margin-left: 0.5rem;
+	padding: 0.2rem 0.5rem;
+	font-size: 1rem;
+}
+a.comment-reply-link,
+a.comment-edit-link {
+	color: #686868;
+	font-size: 1.3rem;
+}
+a.comment-reply-link:hover,
+a.comment-edit-link:hover {
+	color: #21759b;
+}
+.commentlist .pingback {
+	margin-bottom: 2.4rem;
+}
+
+/* Comment form */
+.comment-respond {
+	margin-top: 4.8rem;
+}
+.comment-respond h3#reply-title {
+	font-size: 1.6rem;
+}
+.comment-respond h3#reply-title #cancel-comment-reply-link {
+	margin-left: 1rem;
+	font-weight: normal;
+	font-size: 1.2rem;
+}
+.comment-respond form {
+	margin: 2.4rem 0;
+}
+.comment-respond form p {
+	margin: 1.1rem 0;
+}
+.comment-respond form p.logged-in-as {
+	margin-bottom: 2.4rem;
+}
+.comment-respond form label {
+	display: block;
+}
+.comment-respond form input[type="text"],
+.comment-respond form textarea {
+	font-size: 1.2rem;
+	padding: 1rem;
+	width: 100%;
+}
+.comment-respond form input[type="text"] {
+	@include breakpoint(wide) {
+		width: 46.333333333%;		
+	}
+}
+.comment-respond form textarea.blog-textarea {
+	@include breakpoint(wide) {
+		width: 79.666666667%;
+	}
+}
+.comment-respond form p.form-allowed-tags {
+	margin: 0;
+	font-size: 1.2rem;
+	color: #5e5e5e;
+}
+.required {
+	color: red;
+}
+
+

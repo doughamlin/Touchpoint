@@ -1,0 +1,27 @@
+@mixin breakpoint($point) {
+  @if $point == wide {
+      @media (min-width: 600px) { @content; }
+  }
+  @else if $point == wider {
+      @media (min-width: 960px) { @content; }
+  }
+  @else if $point == widest {
+      @media (min-width: 1200px) { @content; }
+  }
+}
+
+
+
+@mixin size($width,$height:"") {
+  @if $height == "" { $height: $width }
+  width: $width + rem;
+  height: $height + rem;
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
