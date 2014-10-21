@@ -72,6 +72,7 @@ module.exports = function(grunt) {
                 tasks: ['uglify'],
                 options: {
                     spawn: false,
+                    livereload: true,
                 }
             },
 
@@ -80,6 +81,7 @@ module.exports = function(grunt) {
                 tasks: ['imagemin'],
                 options: {
                     spawn: false,
+                    livereload: true,
                 }
             },
 
@@ -88,6 +90,14 @@ module.exports = function(grunt) {
                 tasks: ['sass', 'autoprefixer'],
                 options: {
                     spawn: false,
+                    livereload: true,
+                }
+            },
+
+            php: {
+                files: ['**/*.php'],
+                options: {
+                    livereload: true,
                 }
             },
 

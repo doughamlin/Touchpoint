@@ -57,7 +57,7 @@ function touchpoint_setup() {
 	load_theme_textdomain( 'touchpoint', TEMPLATE_URL . '/languages' );
 
 	// This theme styles the visual editor with editor-style.css to match the theme style.
-  add_editor_style( TEMPLATE_URL . '/editor-style.css?' . STYLESHEET_VERSION );
+	add_editor_style( TEMPLATE_URL . '/editor-style.css?' . STYLESHEET_VERSION );
 
 	// Adds RSS feed links to <head> for posts and comments.
 	add_theme_support( 'automatic-feed-links' );
@@ -83,6 +83,14 @@ function touchpoint_scripts_styles() {
 	global $wp_styles;
 
 	/*
+	 * Adds Grunt watch live reload if in development
+	 */
+	if ( in_array( $_SERVER['REMOTE_ADDR'], array( '127.0.0.1', '::1' ) ) ) {
+		wp_register_script('livereload', 'http://localhost:35729/livereload.js?snipver=1', null, false, true);
+		wp_enqueue_script('livereload');
+	}
+
+	/*
 	 * Adds JavaScript to pages with the comment form to support
 	 * sites with threaded comments (when in use).
 	 */
@@ -94,10 +102,10 @@ function touchpoint_scripts_styles() {
 	 */
 	wp_enqueue_script( 'touchpoint-navigation', TEMPLATE_URL . '/js/navigation.js', array(), '1.0', true );
 
-  /*
-   * Loads supporting styles
-   */
-  wp_enqueue_style( 'font-awesome-style', TEMPLATE_URL . '/assets/fonts/font-awesome/font-awesome.min.css', array(), STYLESHEET_VERSION);
+	/*
+	 * Loads supporting styles
+	 */
+	wp_enqueue_style( 'font-awesome-style', TEMPLATE_URL . '/assets/fonts/font-awesome/font-awesome.min.css', array(), STYLESHEET_VERSION);
 
 	/*
 	 * Loads our main stylesheet.
