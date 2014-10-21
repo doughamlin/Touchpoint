@@ -6,6 +6,7 @@ Touchpoint is a starter theme for WordPress intended for developing business/org
 ### Developer friendly features
 * Sass for style
 * Grunt for tasks
+ * Live reload
  * Minimizes image files
  * Compiles SCSS
  * Autoprefixes CSS
@@ -37,6 +38,7 @@ Touchpoint is a starter theme for WordPress intended for developing business/org
 * Probably some other things I am forgetting?
 
 ## Release History
+* 0.1.8, 21 Oct 2014 - Enabled live reload in grunt-contrib-watch. (Also broke this repository away from WordPress, which it had no business being a fork of.)
 * 0.1.7, 17 Sep 2014 - Refactored CSS to not use ID selectors; Removed some unused CSS; Removed html5.js from header; Swapped in some HTML5 sectioning elements in place of generic divs.
 * 0.1.6, 29 Jul 2014 - New border-box method; updated body_class(); More CSS refactoring.
 * 0.1.5, 20 Jul 2014 - Replaced some colors and widths with variables. More CSS reduction.
