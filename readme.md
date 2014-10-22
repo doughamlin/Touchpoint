@@ -25,6 +25,13 @@ Touchpoint is a starter theme for WordPress intended for developing business/org
 * Removed Open Sans font
 * Tag template (can be duplicated from Category template if needed)
 
+## Get Started
+* Copy the project files to a directory within `wp-content/themes`
+* Run `npm install`
+* Start MAMP, WAMP or whatever
+* Run `grunt watch`
+* Develop your theme
+
 ## To Do
 * Refactor, refactor, refactor the CSS
 * Reduce the base look of the theme by removing uneeded styles
