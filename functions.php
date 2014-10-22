@@ -27,7 +27,7 @@
  * Define constants for use in theme
  */
 define('TEMPLATE_URL', get_template_directory_uri());
-define('STYLESHEET_VERSION', 20140917143953);
+define('STYLESHEET_VERSION', 20141022114022);
 
 /**
  * Define plugins required by theme

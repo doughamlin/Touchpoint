@@ -223,18 +223,20 @@ section[role="banner"] {
 }
 
 /* Sidebar */
-.widget-area .widget {
-	margin-bottom: 4.8rem;
+.widget-area {
+	.widget + .widget {
+		margin-top: 4em;
+	}
 	h3 {
-		margin-bottom: 2.4rem;
+		margin-bottom: 2em;
 	}
 	p,
 	li,
 	.textwidget {
-		font-size: 1.3rem;
+		font-size: 0.9em;
 	}
-	p {
-		margin-bottom: 2.4rem;
+	p + p {
+		margin-top: 1em;
 	}
 	a {
 		color: $secondary-link-color;
@@ -419,17 +421,14 @@ footer[role="contentinfo"] a:hover {
 	}
 }
 .entry-content, .entry-summary, .comment-content, .mu_register {
-	p {
-		margin: 0 0 2.4rem;
-	}
-	ol, ul {
-		margin: 0 0 2.4rem;
+	* + * {
+		margin-top: 1em;
 	}
 	ul {
 		list-style: disc outside;
 	}
 	li {
-		margin: 0 0 0 3.6rem;
+		margin: 0 0 0 2em;
 	}
 }
 img {
