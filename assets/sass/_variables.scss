@@ -1,6 +1,12 @@
 //Colors
+$body-text-color: #444;
 $primary-link-color: #ed1c24;
 $secondary-link-color: #757575;
+
+//Text
+$font-size-rem: 1.4rem;
+$line-height-rem: 2.4rem;
+$line-height-em: ($line-height-rem/$font-size-rem) + em;
 
 //Grid
 $max-width: 960;

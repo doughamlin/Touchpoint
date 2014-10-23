@@ -306,3 +306,28 @@ img.wp-smiley,
 	display: block;
 	text-align: right;
 }
+
+
+/* =Assistive text
+-------------------------------------------------------------- */
+.assistive-text,
+.site .screen-reader-text {
+	position: absolute !important;
+	clip: rect(0.1rem, 0.1rem, 0.1rem, 0.1rem);
+}
+.main-navigation .assistive-text:hover,
+.main-navigation .assistive-text:active,
+.main-navigation .assistive-text:focus {
+	background: #fff;
+	border: 0.2rem solid #333;
+	border-radius: 0.3rem;
+	clip: auto !important;
+	color: #000;
+	display: block;
+	font-size: 1.2rem;
+	padding: 1.2rem;
+	position: absolute;
+	top: 0.5rem;
+	left: 0.5rem;
+	z-index: 100000; /* Above WP toolbar */
+}

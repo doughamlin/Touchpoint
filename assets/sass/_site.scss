@@ -6,12 +6,12 @@ html {
 	font-size: 62.5%;
 }
 body {
-	font-size: 1.4rem;
+	font-size: $font-size-rem;
 	font-family: Helvetica, Arial, sans-serif;
 	hyphens: none;
 	line-height: normal;
 	text-rendering: optimizeLegibility;
-	color: #444;
+	color: $body-text-color;
 }
 a {
 	outline: none;
@@ -19,29 +19,6 @@ a {
 }
 a:hover {
 	color: #0f3647;
-}
-
-/* Assistive text */
-.assistive-text,
-.site .screen-reader-text {
-	position: absolute !important;
-	clip: rect(0.1rem, 0.1rem, 0.1rem, 0.1rem);
-}
-.main-navigation .assistive-text:hover,
-.main-navigation .assistive-text:active,
-.main-navigation .assistive-text:focus {
-	background: #fff;
-	border: 0.2rem solid #333;
-	border-radius: 0.3rem;
-	clip: auto !important;
-	color: #000;
-	display: block;
-	font-size: 1.2rem;
-	padding: 1.2rem;
-	position: absolute;
-	top: 0.5rem;
-	left: 0.5rem;
-	z-index: 100000; /* Above WP toolbar */
 }
 
 /* Page structure */
@@ -308,14 +285,12 @@ footer[role="contentinfo"] a:hover {
 .commentlist .children {
 	@include breakpoint(wide) {
 		margin-left: 4.8rem;
-		margin-left: 4.8rem;
 	}
 }
 .author-avatar {
 	@include breakpoint(wide) {
 		float: left;
 		margin-top: 0.8rem;
-		margin-top: 0.8rem;		
 	}
 }
 .author-description {
@@ -361,12 +336,8 @@ footer[role="contentinfo"] a:hover {
 		list-style: decimal outside;
 	}
 	blockquote {
-		margin-bottom: 2.4rem;
-		padding: 2.4rem;
+		padding: $line-height-em;
 		font-style: italic;
-		p:last-child {
-			margin-bottom: 0;
-		}
 	}
 	code {
 		font-family: Consolas, Monaco, Lucida Console, monospace;
@@ -393,16 +364,16 @@ footer[role="contentinfo"] a:hover {
 		margin: 0 0 2.4rem;
 	}
 	embed, iframe, object, video {
-		margin-bottom: 2.4rem;
+		margin-bottom: $line-height-rem;
 	}
 	dl {
-		margin: 0 2.4rem;
+		margin: 0 2em;
 	}
 	dt {
 		font-weight: bold;
 	}
 	dd {
-		margin-bottom: 2.4rem;
+		margin-bottom: 2em;
 	}
 	table {
 		border-bottom: 0.1rem solid #ededed;
@@ -421,8 +392,11 @@ footer[role="contentinfo"] a:hover {
 	}
 }
 .entry-content, .entry-summary, .comment-content, .mu_register {
+	* {
+		line-height: $line-height-em;
+	}
 	* + * {
-		margin-top: 1em;
+		margin-top: $line-height-em;
 	}
 	ul {
 		list-style: disc outside;
