@@ -7,6 +7,10 @@ $secondary-link-color: #757575;
 $font-size-rem: 1.4rem;
 $line-height-rem: 2.4rem;
 $line-height-em: ($line-height-rem/$font-size-rem) + em;
+$half-line-height-rem: ($line-height-rem / 2);
+$half-line-height-em: (($line-height-rem/$font-size-rem) / 2) + em;
+$twice-line-height-rem: ($line-height-rem * 2);
+$twice-line-height-em: (($line-height-rem/$font-size-rem) * 2) + em;
 
 //Grid
 $max-width: 960;
