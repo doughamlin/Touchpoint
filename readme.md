@@ -45,6 +45,7 @@ Touchpoint is a starter theme for WordPress intended for developing business/org
 * Probably some other things I am forgetting?
 
 ## Release History
+* 0.1.9, 23 Oct 2014 - The theme is now more reliant on variables for line heights, margins and padding. Default margins/paddings in most places are equal to the default line height, half the default line height or twice the default line height. This should help to keep everything harmonious if the default line height is changed.
 * 0.1.8, 21 Oct 2014 - Enabled live reload in grunt-contrib-watch. (Also broke this repository away from WordPress, which it had no business being a fork of.)
 * 0.1.7, 17 Sep 2014 - Refactored CSS to not use ID selectors; Removed some unused CSS; Removed html5.js from header; Swapped in some HTML5 sectioning elements in place of generic divs.
 * 0.1.6, 29 Jul 2014 - New border-box method; updated body_class(); More CSS refactoring.
